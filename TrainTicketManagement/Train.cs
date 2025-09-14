@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TrainTicketManagement
 {
-    public partial class Form1 : Form
+    public partial class Train : Form
     {
-        public Form1()
+        public Train()
         {
             InitializeComponent();
         }
@@ -73,6 +73,11 @@ namespace TrainTicketManagement
         }
 
         private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
