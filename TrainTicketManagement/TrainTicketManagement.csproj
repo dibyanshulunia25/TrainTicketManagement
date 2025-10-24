@@ -52,11 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Passengers.cs">
+    <Compile Include="Passenger.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Passengers.Designer.cs">
-      <DependentUpon>Passengers.cs</DependentUpon>
+    <Compile Include="Passenger.Designer.cs">
+      <DependentUpon>Passenger.cs</DependentUpon>
     </Compile>
     <Compile Include="Train.cs">
       <SubType>Form</SubType>
@@ -66,8 +66,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Passengers.resx">
-      <DependentUpon>Passengers.cs</DependentUpon>
+    <EmbeddedResource Include="Passenger.resx">
+      <DependentUpon>Passenger.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Train.resx">
       <DependentUpon>Train.cs</DependentUpon>
