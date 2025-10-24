@@ -52,6 +52,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conductors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conductors.Designer.cs">
+      <DependentUpon>Conductors.cs</DependentUpon>
+    </Compile>
     <Compile Include="Passenger.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Conductors.resx">
+      <DependentUpon>Conductors.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Passenger.resx">
       <DependentUpon>Passenger.cs</DependentUpon>
     </EmbeddedResource>
