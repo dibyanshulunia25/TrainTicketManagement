@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TrainTicketManagement
 {
-    public partial class Form1 : Form
+    public partial class Train : Form
     {
-        public Form1()
+        public Train()
         {
             InitializeComponent();
         }
