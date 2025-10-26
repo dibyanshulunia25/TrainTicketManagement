@@ -52,11 +52,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bookings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bookings.Designer.cs">
+      <DependentUpon>Bookings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conductors.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Conductors.Designer.cs">
       <DependentUpon>Conductors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Passenger.cs">
       <SubType>Form</SubType>
@@ -78,8 +90,14 @@
     <Compile Include="Travels.Designer.cs">
       <DependentUpon>Travels.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Bookings.resx">
+      <DependentUpon>Bookings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Conductors.resx">
       <DependentUpon>Conductors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Passenger.resx">
       <DependentUpon>Passenger.cs</DependentUpon>
