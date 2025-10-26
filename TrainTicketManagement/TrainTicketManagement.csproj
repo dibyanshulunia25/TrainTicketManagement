@@ -58,11 +58,11 @@
     <Compile Include="Bookings.Designer.cs">
       <DependentUpon>Bookings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Conductors.cs">
+    <Compile Include="Conductor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Conductors.Designer.cs">
-      <DependentUpon>Conductors.cs</DependentUpon>
+    <Compile Include="Conductor.Designer.cs">
+      <DependentUpon>Conductor.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -93,8 +93,8 @@
     <EmbeddedResource Include="Bookings.resx">
       <DependentUpon>Bookings.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Conductors.resx">
-      <DependentUpon>Conductors.cs</DependentUpon>
+    <EmbeddedResource Include="Conductor.resx">
+      <DependentUpon>Conductor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
