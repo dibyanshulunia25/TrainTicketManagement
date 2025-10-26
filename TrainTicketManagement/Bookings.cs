@@ -181,5 +181,110 @@ namespace TrainTicketManagement
         {
 
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backgroundWorker4_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        private void pictureBox12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backgroundWorker3_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        private void backgroundWorker5_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void backgroundWorker6_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        private void pictureBox15_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox19_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox20_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox21_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

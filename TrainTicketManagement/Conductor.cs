@@ -16,5 +16,10 @@ namespace TrainTicketManagement
         {
             InitializeComponent();
         }
+
+        private void Conductor_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
