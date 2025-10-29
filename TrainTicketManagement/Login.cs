@@ -21,5 +21,15 @@ namespace TrainTicketManagement
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ResetBtn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
