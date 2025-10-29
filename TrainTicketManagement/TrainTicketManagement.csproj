@@ -64,6 +64,7 @@
     <Compile Include="Conductor.Designer.cs">
       <DependentUpon>Conductor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Functions.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
