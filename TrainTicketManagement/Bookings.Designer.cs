@@ -54,8 +54,6 @@
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.backgroundWorker4 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -69,6 +67,8 @@
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -303,7 +303,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(243, 14);
+            this.label9.Location = new System.Drawing.Point(193, 16);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(256, 38);
             this.label9.TabIndex = 68;
@@ -391,31 +391,11 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Azure;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.label10);
             this.panel2.Location = new System.Drawing.Point(90, 57);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(304, 42);
             this.panel2.TabIndex = 76;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(51, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 26);
-            this.label1.TabIndex = 60;
-            this.label1.Text = "Book Your Ticket";
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.Azure;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(15, 9);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(30, 24);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "+";
             // 
             // guna2Elipse2
             // 
@@ -495,6 +475,26 @@
             this.pictureBox3.TabIndex = 62;
             this.pictureBox3.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(30, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(22, 26);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "+";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(83, 8);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(162, 26);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Book Your Ticket";
+            // 
             // Bookings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
@@ -556,8 +556,6 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.ComponentModel.BackgroundWorker backgroundWorker4;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
@@ -572,5 +570,7 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label10;
     }
 }
