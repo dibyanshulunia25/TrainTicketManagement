@@ -38,11 +38,11 @@
             this.ResetBtn = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.LoginBtn = new Guna.UI2.WinForms.Guna2GradientButton();
             this.PasswordTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.UNameTb = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,13 +55,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.ResetBtn);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox4);
             this.panel1.Controls.Add(this.LoginBtn);
             this.panel1.Controls.Add(this.PasswordTb);
             this.panel1.Controls.Add(this.UNameTb);
@@ -139,18 +139,6 @@
             this.label1.TabIndex = 24;
             this.label1.Text = "Username";
             // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.White;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.Red;
-            this.textBox4.Location = new System.Drawing.Point(516, 12);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(21, 24);
-            this.textBox4.TabIndex = 23;
-            this.textBox4.Text = "X";
-            // 
             // LoginBtn
             // 
             this.LoginBtn.BorderRadius = 20;
@@ -172,7 +160,7 @@
             // 
             // PasswordTb
             // 
-            this.PasswordTb.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.PasswordTb.BackColor = System.Drawing.Color.Transparent;
             this.PasswordTb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.PasswordTb.DefaultText = "";
             this.PasswordTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -185,6 +173,7 @@
             this.PasswordTb.Location = new System.Drawing.Point(129, 249);
             this.PasswordTb.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.PasswordTb.Name = "PasswordTb";
+            this.PasswordTb.PasswordChar = '*';
             this.PasswordTb.PlaceholderText = "";
             this.PasswordTb.SelectedText = "";
             this.PasswordTb.Size = new System.Drawing.Size(277, 38);
@@ -192,7 +181,7 @@
             // 
             // UNameTb
             // 
-            this.UNameTb.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.UNameTb.BackColor = System.Drawing.Color.Transparent;
             this.UNameTb.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.UNameTb.DefaultText = "";
             this.UNameTb.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -214,6 +203,17 @@
             // 
             this.guna2Elipse2.BorderRadius = 15;
             this.guna2Elipse2.TargetControl = this.panel1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(503, 12);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 28);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "X";
             // 
             // Login
             // 
@@ -242,12 +242,12 @@
         private Guna.UI2.WinForms.Guna2TextBox PasswordTb;
         private Guna.UI2.WinForms.Guna2TextBox UNameTb;
         private Guna.UI2.WinForms.Guna2GradientButton LoginBtn;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label ResetBtn;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -15,71 +15,54 @@ namespace TrainTicketManagement
         public Train()
         {
             InitializeComponent();
+            Con = new Functions();
+            ShowTrains();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
+        Functions Con;
 
+        private void ShowTrains()
+        {
+            string Query = "select * from TrainTbl";
+            TrainsDGV.DataSource = Con.GetData(Query);
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void Clear()
         {
-
+            TrNameTb.Text = "";
+            TrNumberTb.Text = "";
+            TrCapacityTb.Text = "";
+            TrColorTb.Text = "";
+            TrConditionTb.Text = "";
+            InDateTb.Value = DateTime.Today;
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void AddTrBtn_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2TextBox1_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2DateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            if (TrNameTb.Text == "" || TrNumberTb.Text == "" || TrCapacityTb.Text == "" || TrColorTb.Text == "" || TrConditionTb.Text == "")
+            {
+                MessageBox.Show("Missing Information!!!");
+            }
+            else
+            {
+                try
+                {
+                    string TName = TrNameTb.Text;
+                    int TNumber = Convert.ToInt32(TrNumberTb.Text);
+                    int Capacity = Convert.ToInt32(TrCapacityTb.Text);
+                    string Color = TrColorTb.Text;
+                    string Condition = TrConditionTb.Text;
+                    string Query = "insert into TrainTbl values('{0}','{1}','{2}','{3}','{4}','{5}')";
+                    Query = string.Format(Query, TName, TNumber, Capacity, InDateTb.Value.Date.ToString(), Condition, Color);
+                    Con.setData(Query);
+                    MessageBox.Show("Train Added!!!");
+                    ShowTrains();
+                    Clear();
+                }
+                catch (Exception Ex)
+                {
+                    MessageBox.Show(Ex.Message);
+                }
+            }
         }
     }
 }

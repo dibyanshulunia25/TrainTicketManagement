@@ -17,10 +17,6 @@ namespace TrainTicketManagement
             InitializeComponent();
         }
 
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -29,7 +25,29 @@ namespace TrainTicketManagement
 
         private void ResetBtn_Click(object sender, EventArgs e)
         {
-
+            UNameTb.Text = "";
+            PasswordTb.Text = "";
         }
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            if(UNameTb.Text=="" || PasswordTb.Text=="")
+            {
+                MessageBox.Show("Enter UserName And Password");
+            }
+            else if(UNameTb.Text=="Admin" && PasswordTb.Text=="Admin")
+            {
+                Train Obj = new Train();
+                Obj.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Wrong Credentials!!!");
+                UNameTb.Text = "";
+                PasswordTb.Text = "";
+            }
+        }
+
+
     }
 }
