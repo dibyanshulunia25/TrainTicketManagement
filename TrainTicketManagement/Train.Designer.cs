@@ -224,6 +224,7 @@
             // 
             // InDateTb
             // 
+            this.InDateTb.CausesValidation = false;
             this.InDateTb.Checked = true;
             this.InDateTb.FillColor = System.Drawing.Color.Azure;
             this.InDateTb.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -235,6 +236,7 @@
             this.InDateTb.Size = new System.Drawing.Size(265, 39);
             this.InDateTb.TabIndex = 11;
             this.InDateTb.Value = new System.DateTime(2025, 9, 14, 10, 23, 12, 86);
+            this.InDateTb.ValueChanged += new System.EventHandler(this.InDateTb_ValueChanged);
             // 
             // TrColorTb
             // 

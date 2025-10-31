@@ -44,6 +44,17 @@ namespace TrainTicketManagement
             }
             else
             {
+                DateTime selectedDate = InDateTb.Value.Date;
+                if (selectedDate < DateTime.Today)
+                {
+                    MessageBox.Show("Date cannot be before today's date.");
+                    return;
+                }
+                if (selectedDate > DateTime.Today.AddMonths(3))
+                {
+                    MessageBox.Show("Date cannot be more than 3 months from today.");
+                    return;
+                }
                 try
                 {
                     string TName = TrNameTb.Text;
@@ -63,6 +74,11 @@ namespace TrainTicketManagement
                     MessageBox.Show(Ex.Message);
                 }
             }
+        }
+
+        private void InDateTb_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
