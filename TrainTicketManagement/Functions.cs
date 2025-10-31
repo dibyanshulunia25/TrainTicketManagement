@@ -13,7 +13,7 @@ namespace TrainTicketManagement
         string ConStr;
         public Functions()
         {
-            ConStr = @"Data Source=(localdb)\ProjectModels;Initial Catalog=TrainTicketManagementDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
+            ConStr = @"Data Source=(localdb)\ProjectModels;Initial Catalog=TrainTicketManagementDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;";
             Con = new SqlConnection(ConStr);
             Cmd = new SqlCommand();
             Cmd.Connection = Con;
