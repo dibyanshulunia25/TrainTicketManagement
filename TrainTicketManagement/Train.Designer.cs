@@ -63,6 +63,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.UpdateBtn = new System.Windows.Forms.Label();
+            this.DeleteBtn = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TrainsDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -78,6 +80,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Azure;
+            this.panel1.Controls.Add(this.DeleteBtn);
+            this.panel1.Controls.Add(this.UpdateBtn);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
@@ -167,6 +171,7 @@
             this.TrainsDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.TrainsDGV.Location = new System.Drawing.Point(640, 38);
             this.TrainsDGV.Name = "TrainsDGV";
+            this.TrainsDGV.ReadOnly = true;
             this.TrainsDGV.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
@@ -194,7 +199,7 @@
             this.TrainsDGV.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.TrainsDGV.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.TrainsDGV.ThemeStyle.HeaderStyle.Height = 38;
-            this.TrainsDGV.ThemeStyle.ReadOnly = false;
+            this.TrainsDGV.ThemeStyle.ReadOnly = true;
             this.TrainsDGV.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.TrainsDGV.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.TrainsDGV.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -202,6 +207,7 @@
             this.TrainsDGV.ThemeStyle.RowsStyle.Height = 36;
             this.TrainsDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.TrainsDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.TrainsDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.TrainsDGV_CellContentClick);
             // 
             // AddTrBtn
             // 
@@ -457,6 +463,30 @@
             this.label7.TabIndex = 2;
             this.label7.Text = "Train Management";
             // 
+            // UpdateBtn
+            // 
+            this.UpdateBtn.AutoSize = true;
+            this.UpdateBtn.Font = new System.Drawing.Font("Trebuchet MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpdateBtn.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.UpdateBtn.Location = new System.Drawing.Point(250, 368);
+            this.UpdateBtn.Name = "UpdateBtn";
+            this.UpdateBtn.Size = new System.Drawing.Size(81, 26);
+            this.UpdateBtn.TabIndex = 18;
+            this.UpdateBtn.Text = "Update";
+            this.UpdateBtn.Click += new System.EventHandler(this.UpdateBtn_Click);
+            // 
+            // DeleteBtn
+            // 
+            this.DeleteBtn.AutoSize = true;
+            this.DeleteBtn.Font = new System.Drawing.Font("Trebuchet MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteBtn.ForeColor = System.Drawing.Color.Crimson;
+            this.DeleteBtn.Location = new System.Drawing.Point(343, 368);
+            this.DeleteBtn.Name = "DeleteBtn";
+            this.DeleteBtn.Size = new System.Drawing.Size(73, 26);
+            this.DeleteBtn.TabIndex = 19;
+            this.DeleteBtn.Text = "Delete";
+            this.DeleteBtn.Click += new System.EventHandler(this.DeleteBtn_Click);
+            // 
             // Train
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 26F);
@@ -480,6 +510,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TrainsDGV)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -526,6 +557,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label DeleteBtn;
+        private System.Windows.Forms.Label UpdateBtn;
     }
 }
 
